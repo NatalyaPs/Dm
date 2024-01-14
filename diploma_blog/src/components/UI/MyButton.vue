@@ -12,12 +12,17 @@ export default {
 
 <style lang="scss" scoped>
 .btn {
-    width: 100px;
-    height: 35px;
-    padding: 8px, 12px;
-    background: none;
-    color: darkgreen;
-    border: 2px solid grey;
-    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background: #517113;
+    color: white;
+    border: 1px solid #517113;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 </style>

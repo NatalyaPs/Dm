@@ -1,23 +1,18 @@
 <template>
-  <PostForm/>
-  <PostList/>
+  <HeaderComp/>
+  <div class="app">
+    <router-view></router-view>
+  </div>
+  <FooterComp/>
 </template>
 
 <script>
-import PostForm from '@/components/PostForm.vue';
-import PostList from '@/components/PostList.vue';
+import HeaderComp from '@/components/HeaderComp.vue';
+// import NavbarComp from '@/components/NavbarComp.vue';
+import FooterComp from '@/components/FooterComp.vue';
 
 export default {
-  components: {PostForm, PostList},
-  data() {
-    return {
-      posts: [
-        {id: 1, tytle: 'заголовок 1', body: 'текст поста 1'},
-        {id: 2, tytle: 'заголовок 2', body: 'текст поста 2'},
-        {id: 3, tytle: 'заголовок 3', body: 'текст поста 3'},
-      ]
-    }
-  }
+  components: { HeaderComp, FooterComp },
 }
 </script>
 
@@ -27,27 +22,21 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+// a {
+//     text-decoration: none;
+//     cursor: pointer;
+// }
 .app {
-  padding: 12px;
+  min-height: calc(100vh - 140px);
+  // &_btns {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin: 15px, 0;
+  // }
+
 }
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-// }
-
-// nav {
-//   padding: 30px;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
+.center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
 </style>

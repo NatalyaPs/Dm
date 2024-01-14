@@ -26,7 +26,7 @@ export default {
     width: 100%;
     padding: 8px 12px;
     margin-top: 12px;
-    border: 1px solid grey;
+    border: 1px solid rgb(144, 189, 169);
     border-radius: 8px;
     margin-top: 12px;
 }
