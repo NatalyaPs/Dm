@@ -9,12 +9,6 @@ import NavbarComp from './NavbarComp.vue';
 
 export default {
     name: 'HeaderComp',
-    data() {
-        return {};
-    },
-    mounted() {
-    },
-    methods: {},
     components: { NavbarComp }
 };
 </script>

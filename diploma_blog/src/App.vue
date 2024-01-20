@@ -8,7 +8,6 @@
 
 <script>
 import HeaderComp from '@/components/HeaderComp.vue';
-// import NavbarComp from '@/components/NavbarComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 
 export default {
@@ -21,22 +20,35 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
 }
-// a {
-//     text-decoration: none;
-//     cursor: pointer;
-// }
+a {
+    text-decoration: none;
+    // cursor: pointer;
+}
 .app {
-  min-height: calc(100vh - 140px);
-  // &_btns {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin: 15px, 0;
-  // }
-
+  min-height: calc(100vh - 175px);   // минус высота хедера и футера calc(100vh - 140px)
 }
 .center {
   padding-left: calc(50% - 700px);
   padding-right: calc(50% - 700px);
+}
+@media (max-width: 1140px) {
+  .center {
+    padding-left: calc(50% - 510px);
+    padding-right: calc(50% - 510px);
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 450px);
+    padding-right: calc(50% - 450px);
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+  }
 }
 </style>

@@ -6,7 +6,6 @@
         <div class="navbar_btns">
             <MyButton @click="$router.push('/posts')">Блог</MyButton>
             <MyButton @click="$router.push('/about')">О нас</MyButton>
-            <MyButton @click="$router.push('/store')">Store</MyButton>
         </div>
     </div>
 </template>
@@ -33,11 +32,22 @@ export default {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        transition: 0.2s;
+        &:hover {
+            text-shadow: 0px 5px 5px rgba(63, 68, 51, 0.59);
+    }
     }
     &_btns {
-        // width: 400px;
         display: flex;
         gap: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar {
+        &_logo {
+            width: 100px;
+            font-size: 14px;
+        }
     }
 }
 </style>

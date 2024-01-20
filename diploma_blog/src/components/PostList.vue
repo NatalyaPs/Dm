@@ -1,5 +1,5 @@
 <template>
-    <div class="post-list">
+    <div class="post-list center">
         <div v-if="posts.length > 0">
             <TransitionGroup name="postlist">
                 <PostItem
@@ -11,14 +11,8 @@
                 />
             </TransitionGroup>
         </div>
-        <h2 v-else class="zero-blog">Пока в нашем блоге нет записей</h2>
+        <h2 v-else class="post-list_zero-blog">Пока в нашем блоге нет записей</h2>
     </div>
-    <!-- @remove="$emit('remove', post)" прокидываем событие @remove от ребенка наверх -->
-
-    <!-- // ??? 111
-                    @remove="$emit('remove', post)"   -->
-
-                    <!-- @update="$emit('update', post)" -->
 </template>
 
 <script>
@@ -37,11 +31,14 @@ export default {
 
 <style lang="scss" scoped>
 .post-list {
-    padding: 3%;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    &_zero-blog {
+        color: #2F4209;
+    }
 }
-.zero-blog {
-    color: darkgreen;
-}
+
 .postlist-item {
     display: inline-block;
     margin-right: 10px;

@@ -1,7 +1,10 @@
-<!-- <select v-model="modelValue" @change="changeOption"></select> -->
 <template>
-    <select :value="modelValue" @change="changeOption">
-        <option disabled value="">Выберите из списка</option>
+    <select 
+        :value="modelValue" 
+        @change="changeOption"
+        class="select"
+    >
+        <option disabled value="">Сортировка</option>
         <option 
             v-for="option in options"
             :key="option.value" 
@@ -10,7 +13,6 @@
             {{ option.name }}
         </option>
     </select>
-    <!-- дефолтная опция по умолчанию отключена - option disabled -->
 </template>
 
 <script>
@@ -35,5 +37,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.select {
+    border: 1px solid rgba(93, 137, 3, 0.30);;
+    border-radius: 8px;
+    color: #2F4209;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 </style>

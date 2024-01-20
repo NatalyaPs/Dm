@@ -1,6 +1,5 @@
 <template>
-    <form @submit.prevent class="postForm">
-        <h4></h4>
+    <form @submit.prevent class="postForm center">
         <MyInput
             v-model.trim="post.title"
             type="text"
@@ -11,25 +10,18 @@
             type="text"
             placeholder="Текст поста" 
         />
-        <MyButton
-            style="align-self: flex-end; margin-top: 15px"
-            @click="createPost"
-        >
-            Сохранить
-        </MyButton>
-        <!-- убрать инлайн стили в кнопке -->
+        <div class="btn-form">
+            <MyButton
+                @click="createPost"
+            >
+                Сохранить
+            </MyButton>
+        </div>
     </form>
 </template>
 
 <script>
-// // ??? 111
-// import {mapMutations} from 'vuex';
-
 export default {
-    // // ??? 111
-    // ...mapMutations({
-
-    // }),
     name: "PostForm",
 
     data() {
@@ -42,14 +34,8 @@ export default {
     },
 
     methods: {
-        // ...mapMutations({
-        //     setPage: 'setPage', //post/
-        //     setSearchQuery: 'setSearchQuery',
-        //     setSelectedSort: 'setSelectedSort',
-        // }),
         createPost() {
             this.post.id = Date.now();
-            // передаем данные от ребенка родителю
             this.$emit('create', this.post)
             this.post = {
                 title: '',
@@ -65,5 +51,10 @@ export default {
     display: flex;
     flex-direction: column;
     padding: 24px;
+}
+.btn-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
 }
 </style>

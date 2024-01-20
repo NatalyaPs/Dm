@@ -1,10 +1,13 @@
 <template>
-    <div v-if="show" class="dialog" @click.stop="hideDialog">
+    <div 
+        v-if="show" 
+        class="dialog center"
+        @click.stop="hideDialog"
+    >
         <div @click.stop class="dialog_content">
             <slot></slot>
         </div>
     </div>
-    <!-- @click.stop ч.б.диалюокно не закрывалось при клике на него -->
 </template>
 
 <script>
@@ -41,6 +44,5 @@ export default {
         min-height: 50%;
         min-width: 70%;
     }
-
 }
 </style>
