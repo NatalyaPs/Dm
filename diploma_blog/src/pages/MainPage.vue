@@ -1,6 +1,6 @@
 <template>
     <div class="content center">
-        <div class="main">
+        <main class="main">
             <div class="main_photo"><img src="./../../public/mainDog.png" alt="photo of a dog"></div>
             <div class="main_info">
                 <div class="main_info__subtitle">
@@ -10,7 +10,7 @@
                     <h1  class="main_info__title-text">Питомник of eco-style</h1>
                 </div>
             </div>
-        </div>
+        </main>
         <div class="description">
             <div>
                 <p class="description_text">Шнауцеры - собаки с благородным характером. Они являются отличными компаньонами и любящими членами семьи, энергичные, умные и ориентированные на человека, идеальные партнеры для активных владельцев и для семей с детьми. 

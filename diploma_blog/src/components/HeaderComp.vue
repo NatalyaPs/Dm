@@ -1,7 +1,7 @@
 <template>
-    <div class="header">
+    <header class="header">
         <NavbarComp></NavbarComp>
-    </div>
+    </header>
 </template>
 
 <script>

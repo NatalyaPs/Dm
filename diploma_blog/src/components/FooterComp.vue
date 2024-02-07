@@ -1,7 +1,7 @@
 <template>
-    <div class="footer">
+    <footer class="footer">
         <p class="footer_text center">напишите нам: schnauzer-eco@po4ta.ru</p>
-    </div>
+    </footer>
 </template>
 
 <script>

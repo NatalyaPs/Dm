@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar center">
+    <nav class="navbar center">
         <div @click="$router.push('/')" class="navbar_logo">
             <h3>of eco-style</h3>
         </div>
@@ -7,7 +7,7 @@
             <MyButton @click="$router.push('/posts')">Блог</MyButton>
             <MyButton @click="$router.push('/about')">О нас</MyButton>
         </div>
-    </div>
+    </nav>
 </template>
 
 <script>

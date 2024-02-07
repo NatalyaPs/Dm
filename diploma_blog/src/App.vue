@@ -27,7 +27,7 @@ a {
     // cursor: pointer;
 }
 .app {
-  min-height: calc(100vh - 175px);   // минус высота хедера и футера calc(100vh - 140px)
+  min-height: calc(100vh - 175px);   // минус высота хедера и футера calc(100vh - 140px) 
 }
 .center {
   padding-left: calc(50% - 700px);
